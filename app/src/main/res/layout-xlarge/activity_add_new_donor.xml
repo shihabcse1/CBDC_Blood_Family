@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddNewDonorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/enter_blood_donor_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_blood_donor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:maxLength="40" />
+
+        <TextView
+            android:id="@+id/textView_blood_donor_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/contact_number"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_number_of_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/ex_01xxxxxxxxx"
+            android:inputType="phone"
+            android:maxLength="40" />
+
+        <TextView
+            android:id="@+id/textView_select_district"
+            android:background="@drawable/edittext_rectangle_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="14dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="@string/select_district"
+            android:gravity="center_vertical"
+            android:text="Select District"
+            android:textColor="@color/black"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <TextView
+            android:id="@+id/textView_blood_last_donation_date"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:gravity="center"
+            android:text="Select Last Donation Date"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_select_blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:gravity="center_vertical"
+            android:hint="@string/select_blood_group"
+            android:padding="14dp"
+            android:text="@string/select_blood_group"
+            android:textColor="@color/black"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <EditText
+            android:id="@+id/editTextText_blood_donor_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/organization"
+            android:inputType="textPersonName"
+            android:maxLength="40" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:weightSum="2">
+
+            <TextView
+                android:text="@string/ready_to_donate"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_donate_status"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_rectangle_style"
+            android:text="@string/submit" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6210048043141055/5441193435">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

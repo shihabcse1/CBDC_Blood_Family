@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CoordinatorActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/enter_coordinator_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_coordinator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:maxLength="40" />
+
+        <TextView
+            android:id="@+id/textView_coordinator_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/contact_number"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_number_of_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/ex_01xxxxxxxxx"
+            android:inputType="phone"
+            android:maxLength="30" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/enter_app_admin_password"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_app_admin_passoword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="40" />
+
+
+
+        <Button
+            android:id="@+id/button_submit_coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_rectangle_style"
+            android:text="@string/submit"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

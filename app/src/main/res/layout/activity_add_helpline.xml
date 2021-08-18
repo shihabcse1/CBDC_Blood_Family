@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddHelplineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewAmbulanceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Ambulance Name"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextText_ambulance_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittext_rectangle_style"
+        android:ems="10"
+        android:hint="Ambulance Name"
+        android:inputType="textPersonName"
+        android:maxLength="40" />
+
+    <TextView
+        android:id="@+id/textView_helpline_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Mobile No"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextText_ambulance_contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittext_rectangle_style"
+        android:ems="10"
+        android:hint="@string/ex_01xxxxxxxxx"
+        android:inputType="phone"
+        android:maxLength="40" />
+
+    <TextView
+        android:id="@+id/textView_upazila_or_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Upazila/University"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextText_upozila_or_university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittext_rectangle_style"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="40" />
+
+    <TextView
+        android:id="@+id/textView_select_district"
+        android:background="@drawable/edittext_rectangle_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="14dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="@string/select_district"
+        android:gravity="center_vertical"
+        android:text="Select District"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:weightSum="2">
+
+        <TextView
+            android:text="Ready to Service"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_ambulance_status"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit_helpline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rectangle_style"
+        android:text="@string/submit" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.AddOrganizationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewNameClick"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/tap_to_select_logo"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewOrganizationLogo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/add_image" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/enter_organization_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_organization_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/organization_name"
+            android:inputType="textPersonName"
+            android:maxLength="40" />
+
+        <TextView
+            android:id="@+id/textView_admin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/enter_admin_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_admin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/admin_name"
+            android:inputType="textPersonName"
+            android:maxLength="40" />
+
+
+        <TextView
+            android:id="@+id/textView_blood_donor_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:text="@string/admin_contact_number"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextText_number_of_admin_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edittext_rectangle_style"
+            android:ems="10"
+            android:hint="@string/ex_01xxxxxxxxx"
+            android:inputType="phone"
+            android:maxLength="40" />
+
+
+        <TextView
+            android:id="@+id/textView_select_district"
+            android:background="@drawable/edittext_rectangle_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="14dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="@string/select_district"
+            android:gravity="center_vertical"
+            android:text="@string/select_district"
+            android:textColor="@color/black"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <Button
+            android:id="@+id/button_submit_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_rectangle_style"
+            android:text="@string/submit"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

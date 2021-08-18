@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Edit Information"
+            android:id="@+id/nav_menu_edit_information"
+            android:icon="@drawable/ic_baseline_edit_24"/>
+
+        <item android:title="Add Blood Request"
+            android:id="@+id/nav_menu_add_blood_request"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"/>
+
+        <item android:title="Add New Donor"
+            android:id="@+id/nav_menu_add_donor"
+            android:icon="@drawable/ic_baseline_person_add_24"/>
+
+        <item android:title="Add Coordinator"
+            android:id="@+id/nav_menu_add_coordinator"
+            android:icon="@drawable/ic_baseline_person_add_alt_1_24"/>
+
+        <item android:title="Add Organization"
+            android:id="@+id/nav_menu_add_organization"
+            android:icon="@drawable/ic_baseline_group_add_24"/>
+
+        <item android:title="Add Blood Bank"
+            android:id="@+id/nav_menu_add_blood_bank"
+            android:icon="@drawable/ic_baseline_add_circle_24"/>
+
+        <item android:title="@string/add_helpline"
+            android:id="@+id/nav_menu_add_helpline"
+            android:icon="@drawable/ic_baseline_add_circle_24"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_menu_donate_us"
+                android:icon="@drawable/ic_baseline_donate_on_24"
+                android:title="Donate Us"/>
+            <item android:id="@+id/nav_menu_helpline"
+                android:icon="@drawable/ic_baseline_connect_without_contact_24"
+                android:title="Helpline"/>
+            <item android:id="@+id/nav_menu_about_developer"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="About Devloper"/>
+            <item android:title="Sign Out"
+                android:id="@+id/menu_sign_out"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+        </menu>
+    </item>
+</menu>
