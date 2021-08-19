@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(donateUsActivity);
         }
 
-        if(item.getItemId() == R.id.nav_menu_helpline){
+        if(item.getItemId() == R.id.nav_menu_add_helpline){
             Intent helpLineActivity = new Intent(MainActivity.this, AddHelplineActivity.class);
             startActivity(helpLineActivity);
         }

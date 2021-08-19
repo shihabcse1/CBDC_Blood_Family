@@ -233,7 +233,6 @@ public class AddNewDonorActivity extends AppCompatActivity {
                 // checking the input validation first
                 if (isUserInputValidation(bloodDonorName, contactNumber, district, bloodGroup) == false) {
 
-
                     //buttonRegister.setVisibility(View.VISIBLE);
 
                 } else {

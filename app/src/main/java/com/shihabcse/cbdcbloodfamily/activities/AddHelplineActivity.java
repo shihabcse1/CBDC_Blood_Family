@@ -45,7 +45,6 @@ public class AddHelplineActivity extends AppCompatActivity {
     private CheckBox checkBoxAmbulanceStatus;
 
     private Button buttonAmbulanceSubmit;
-    private FirebaseAuth mAuth;
 
     //private ProgressDialog progressDialog;
 
@@ -54,8 +53,6 @@ public class AddHelplineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_helpline);
 
-        //initialize the FirebaseAuth instance.
-        mAuth = FirebaseAuth.getInstance();
 
         checkBoxAmbulanceStatus = findViewById(R.id.checkBox_ambulance_status);
         editTextAmbulanceName = findViewById(R.id.editTextText_ambulance_name);
@@ -181,8 +178,8 @@ public class AddHelplineActivity extends AppCompatActivity {
         //progressDialog.setCanceledOnTouchOutside(true);
         //progressDialog.show();
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference addAmbulanceReference = database.getReference("help_lines");
+        FirebaseDatabase mydatabase = FirebaseDatabase.getInstance();
+        DatabaseReference addAmbulanceReference = mydatabase.getReference("help_lines");
 
         // storing in realtime database according to current time
         String key = helpLine.getAmbulanceContactNumber();
@@ -192,7 +189,7 @@ public class AddHelplineActivity extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
                 showMessage("New Donor Added");
                 //progressDialog.dismiss();
-                //updateUI();
+                updateUI();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
