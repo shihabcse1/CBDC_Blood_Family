@@ -46,7 +46,7 @@ public class AddHelplineActivity extends AppCompatActivity {
 
     private Button buttonAmbulanceSubmit;
 
-    //private ProgressDialog progressDialog;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class AddHelplineActivity extends AppCompatActivity {
         ambulanceSelectDistrict = findViewById(R.id.textView_select_district);
         buttonAmbulanceSubmit = findViewById(R.id.button_submit_helpline);
 
-        //progressDialog = new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);
 
         arrayListDistrict = new ArrayList<>();
         arrayListDistrict.add("Bagerhat");
@@ -173,28 +173,28 @@ public class AddHelplineActivity extends AppCompatActivity {
 
     private void addDataToDatabase(HelpLine helpLine) {
         // progress Dialog
-        //progressDialog.setTitle("Adding Information");
-        //progressDialog.setMessage("Please wait ...");
-        //progressDialog.setCanceledOnTouchOutside(true);
-        //progressDialog.show();
+        progressDialog.setTitle("Adding Information");
+        progressDialog.setMessage("Please wait ...");
+        progressDialog.setCanceledOnTouchOutside(true);
+        progressDialog.show();
 
-        FirebaseDatabase mydatabase = FirebaseDatabase.getInstance();
-        DatabaseReference addAmbulanceReference = mydatabase.getReference("help_lines");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference addAmbulanceReference = database.getReference("help_lines");
 
         // storing in realtime database according to current time
-        String key = helpLine.getAmbulanceContactNumber();
+        String key = helpLine.getAmbulanceName();
 
         addAmbulanceReference.child(key).setValue(helpLine).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 showMessage("New Donor Added");
-                //progressDialog.dismiss();
+                progressDialog.dismiss();
                 updateUI();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                //progressDialog.dismiss();
+                progressDialog.dismiss();
                 showMessage("Failed to Add Donor");
             }
         });

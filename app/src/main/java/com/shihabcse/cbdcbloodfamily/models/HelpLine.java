@@ -3,11 +3,11 @@ package com.shihabcse.cbdcbloodfamily.models;
 import com.google.firebase.database.ServerValue;
 
 public class HelpLine {
-    private String AmbulanceName;
-    private String AmbulanceContactNumber;
-    private String AmbulanceUpazilaOrUniversity;
-    private String AmbulanceDistrict;
-    private String AmbulanceStatus;
+    private String ambulanceName;
+    private String ambulanceContactNumber;
+    private String ambulanceUpazilaOrUniversity;
+    private String ambulanceDistrict;
+    private String ambulanceStatus;
     private Object timeStamp;
 
     public HelpLine(){
@@ -15,52 +15,52 @@ public class HelpLine {
     }
 
     public HelpLine(String ambulanceName, String ambulanceContactNumber, String ambulanceUpazilaOrUniversity, String ambulanceDistrict, String ambulanceStatus) {
-        AmbulanceName = ambulanceName;
-        AmbulanceContactNumber = ambulanceContactNumber;
-        AmbulanceUpazilaOrUniversity = ambulanceUpazilaOrUniversity;
-        AmbulanceDistrict = ambulanceDistrict;
-        AmbulanceStatus = ambulanceStatus;
+        this.ambulanceName = ambulanceName;
+        this.ambulanceContactNumber = ambulanceContactNumber;
+        this.ambulanceUpazilaOrUniversity = ambulanceUpazilaOrUniversity;
+        this.ambulanceDistrict = ambulanceDistrict;
+        this.ambulanceStatus = ambulanceStatus;
         this.timeStamp = ServerValue.TIMESTAMP;
     }
 
     public String getAmbulanceName() {
-        return AmbulanceName;
+        return ambulanceName;
     }
 
     public void setAmbulanceName(String ambulanceName) {
-        AmbulanceName = ambulanceName;
+        this.ambulanceName = ambulanceName;
     }
 
     public String getAmbulanceContactNumber() {
-        return AmbulanceContactNumber;
+        return ambulanceContactNumber;
     }
 
     public void setAmbulanceContactNumber(String ambulanceContactNumber) {
-        AmbulanceContactNumber = ambulanceContactNumber;
+        this.ambulanceContactNumber = ambulanceContactNumber;
     }
 
     public String getAmbulanceUpazilaOrUniversity() {
-        return AmbulanceUpazilaOrUniversity;
+        return ambulanceUpazilaOrUniversity;
     }
 
     public void setAmbulanceUpazilaOrUniversity(String ambulanceUpazilaOrUniversity) {
-        AmbulanceUpazilaOrUniversity = ambulanceUpazilaOrUniversity;
+        this.ambulanceUpazilaOrUniversity = ambulanceUpazilaOrUniversity;
     }
 
     public String getAmbulanceDistrict() {
-        return AmbulanceDistrict;
+        return ambulanceDistrict;
     }
 
     public void setAmbulanceDistrict(String ambulanceDistrict) {
-        AmbulanceDistrict = ambulanceDistrict;
+        this.ambulanceDistrict = ambulanceDistrict;
     }
 
     public String getAmbulanceStatus() {
-        return AmbulanceStatus;
+        return ambulanceStatus;
     }
 
     public void setAmbulanceStatus(String ambulanceStatus) {
-        AmbulanceStatus = ambulanceStatus;
+        this.ambulanceStatus = ambulanceStatus;
     }
 
     public Object getTimeStamp() {
@@ -70,5 +70,4 @@ public class HelpLine {
     public void setTimeStamp(Object timeStamp) {
         this.timeStamp = timeStamp;
     }
-
 }
