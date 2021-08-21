@@ -38,14 +38,10 @@ public class AddHelplineActivity extends AppCompatActivity {
     private EditText editTextAmbulancePhoneNumber;
     private EditText editTextAmbulanceUniversityOrUpazila;
     private TextView ambulanceSelectDistrict;
-
     private ArrayList<String> arrayListDistrict;
     private Dialog dialog;
-
     private CheckBox checkBoxAmbulanceStatus;
-
     private Button buttonAmbulanceSubmit;
-
     private ProgressDialog progressDialog;
 
     @Override
@@ -53,14 +49,12 @@ public class AddHelplineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_helpline);
 
-
         checkBoxAmbulanceStatus = findViewById(R.id.checkBox_ambulance_status);
         editTextAmbulanceName = findViewById(R.id.editTextText_ambulance_name);
         editTextAmbulancePhoneNumber = findViewById(R.id.editTextText_ambulance_contact_number);
         editTextAmbulanceUniversityOrUpazila = findViewById(R.id.editTextText_upozila_or_university);
         ambulanceSelectDistrict = findViewById(R.id.textView_select_district);
         buttonAmbulanceSubmit = findViewById(R.id.button_submit_helpline);
-
         progressDialog = new ProgressDialog(this);
 
         arrayListDistrict = new ArrayList<>();
@@ -130,9 +124,7 @@ public class AddHelplineActivity extends AppCompatActivity {
         ambulanceSelectDistrict.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 selectDistrictBySearch();
-
             }
         });
 
@@ -151,20 +143,16 @@ public class AddHelplineActivity extends AppCompatActivity {
                     //buttonRegister.setVisibility(View.VISIBLE);
 
                 }else{
-
                     if(checkBoxAmbulanceStatus.isChecked()){
                         bloodDonationStatus = "Yes";
                     }
-
                     HelpLine helpLine = new HelpLine(ambulanceName,
                             ambulancePhoneNumber,
                             ambulanceUniversityOrUpazila,
                             district,
                             bloodDonationStatus
                     );
-
                     addDataToDatabase(helpLine);
-
                 }
             }
         });
@@ -182,7 +170,7 @@ public class AddHelplineActivity extends AppCompatActivity {
         DatabaseReference addAmbulanceReference = database.getReference("help_lines");
 
         // storing in realtime database according to current time
-        String key = helpLine.getAmbulanceName();
+        String key = helpLine.getAmbulanceContactNumber();
 
         addAmbulanceReference.child(key).setValue(helpLine).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
@@ -234,7 +222,6 @@ public class AddHelplineActivity extends AppCompatActivity {
             Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
             return false;
         }
-
         return true;
 
     }

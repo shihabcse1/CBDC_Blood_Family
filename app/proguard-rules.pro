@@ -7,3 +7,4 @@
 -keep class com.shihabcse.cbdcbloodfamily.models.RegisterUser{*;}
 -keep class com.shihabcse.cbdcbloodfamily.models.RegisterUserEdited{*;}
 -keep class com.shihabcse.cbdcbloodfamily.models.HelpLine{*;}
+-keep class com.shihabcse.cbdcbloodfamily.models.BloodBank{*;}

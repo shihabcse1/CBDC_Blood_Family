@@ -219,7 +219,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if(item.getItemId() == R.id.nav_menu_add_blood_bank){
-            Toast.makeText(getApplicationContext(),"Coming Soon", Toast.LENGTH_LONG).show();
+            Intent addBloodBankActivity = new Intent(MainActivity.this, AddBloodBankActivity.class);
+            startActivity(addBloodBankActivity);
         }
 
         if(item.getItemId() == R.id.nav_menu_donate_us){

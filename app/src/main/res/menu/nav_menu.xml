@@ -37,6 +37,9 @@
             <item android:id="@+id/nav_menu_donate_us"
                 android:icon="@drawable/ic_baseline_donate_on_24"
                 android:title="Donate Us"/>
+            <item android:id="@+id/nav_menu_blood_bank"
+                android:icon="@drawable/ic_baseline_connect_without_contact_24"
+                android:title="Blood Bank"/>
             <item android:id="@+id/nav_menu_helpline"
                 android:icon="@drawable/ic_baseline_connect_without_contact_24"
                 android:title="Helpline"/>
