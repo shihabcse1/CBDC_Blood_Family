@@ -88,7 +88,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Md. Shihab Uddin"
-                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <TextView
@@ -96,15 +95,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/dharmokam_sherpur_bogra"
-                        android:textColor="@color/black" />
+                        android:text="@string/dharmokam_sherpur_bogra" />
 
                     <TextView
                         android:id="@+id/textView_donation_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ready to donate : Yes"
-                        android:textColor="@color/black" />
+                        android:text="Ready to donate : Yes" />
 
                 </LinearLayout>
 
@@ -151,8 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="5dp"
-                android:text="@string/last_donation_date_25_10_2020"
-                android:textColor="@color/black" />
+                android:text="@string/last_donation_date_25_10_2020" />
 
             <TextView
                 android:id="@+id/text_view_donor_phone_number"
@@ -160,11 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/phone_number_01723000000"
-                android:textColor="@color/black" />
+                android:text="@string/phone_number_01723000000" />
 
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>

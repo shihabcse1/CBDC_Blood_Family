@@ -32,18 +32,26 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/text_view_ambulance_name"
+                    android:id="@+id/text_view_blood_bank_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="National Emergency Number"
+                    android:text="Idgor Blood Bank"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView_ambulance_phone_number"
+                    android:id="@+id/textView_blood_bank_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="999"
+                    android:text="Mirpur, Dhaka, Bangladesh"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textView_blood_bank_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0635468393932"
                     android:textColor="@color/black"
                     android:textSize="13sp" />
 
@@ -59,7 +67,7 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/imageView_call_ambulance"
+                android:id="@+id/imageView_call_blood_bank"
                 android:layout_gravity="center"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
