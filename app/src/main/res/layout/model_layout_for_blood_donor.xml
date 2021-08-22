@@ -88,6 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Md. Shihab Uddin"
+                        android:textColor="@color/mid_dark"
                         android:textSize="18sp" />
 
                     <TextView
@@ -95,12 +96,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="@color/mid_dark"
                         android:text="@string/dharmokam_sherpur_bogra" />
 
                     <TextView
                         android:id="@+id/textView_donation_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/mid_dark"
                         android:text="Ready to donate : Yes" />
 
                 </LinearLayout>
@@ -148,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="5dp"
+                android:textColor="@color/mid_dark"
                 android:text="@string/last_donation_date_25_10_2020" />
 
             <TextView
@@ -156,6 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
+                android:textColor="@color/mid_dark"
                 android:text="@string/phone_number_01723000000" />
 
         </LinearLayout>

@@ -9,7 +9,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,15 +17,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
@@ -41,8 +37,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.shihabcse.cbdcbloodfamily.BuildConfig;
 import com.shihabcse.cbdcbloodfamily.adapters.PageAdapter;
 import com.shihabcse.cbdcbloodfamily.R;
-import com.shihabcse.cbdcbloodfamily.models.HelpLine;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -229,7 +223,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if(item.getItemId() == R.id.nav_menu_add_helpline){
-            Intent helpLineActivity = new Intent(MainActivity.this, AddHelplineActivity.class);
+            Intent addHelpLineActivity = new Intent(MainActivity.this, AddHelplineActivity.class);
+            startActivity(addHelpLineActivity);
+        }
+
+        if(item.getItemId() == R.id.nav_menu_helpline){
+            Intent helpLineActivity = new Intent(MainActivity.this, HelplineShow.class);
             startActivity(helpLineActivity);
         }
 
@@ -296,6 +295,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             });
 
         }
+
         if(item.getItemId() == R.id.menu_sign_out){
             FirebaseAuth.getInstance().signOut();
             Intent loginActivity = new Intent(MainActivity.this, LoginActivity.class);

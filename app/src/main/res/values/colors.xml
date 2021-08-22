@@ -18,5 +18,5 @@
     <color name="softBlack">#2F333F</color>
     <color name="green">#1B5E20</color>
     <color name="blue">#283593</color>
-
+    <color name="mid_dark">#212121</color>
 </resources>
