@@ -74,6 +74,7 @@ public class HelplineShow extends AppCompatActivity {
         helplineRecyclerView = findViewById(R.id.recyclerView_item_show_helpline);
         helplineRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         helplineRecyclerView.setHasFixedSize(true);
+        helplineRecyclerView.setAdapter(helplineAdapter);//this line added for checking
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("help_lines");

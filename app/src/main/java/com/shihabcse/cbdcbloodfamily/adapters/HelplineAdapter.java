@@ -35,6 +35,33 @@ public class HelplineAdapter extends RecyclerView.Adapter<HelplineAdapter.MyView
         this.mDataFiltered = mData;
     }
 
+    @NonNull
+    @Override
+    public HelplineAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View row = LayoutInflater.from(myContext).inflate(R.layout.model_layout_for_helpline, parent, false);
+        return new MyViewHolder(row);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull HelplineAdapter.MyViewHolder holder, int position) {
+
+        //making the whole cardView Animated
+        holder.cardViewSampleHelpLine.setAnimation(AnimationUtils.loadAnimation(myContext, R.anim.fade_scale_animation));
+        holder.textViewHelpLineName.setText(mDataFiltered.get(position).getAmbulanceName());
+        holder.textViewHelpLinePhoneNo.setText(mDataFiltered.get(position).getAmbulanceContactNumber());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        if(mDataFiltered.size() == 0){
+            //Toast.makeText(myContext, "No Data Found", Toast.LENGTH_SHORT).show();
+            return 0;
+        }else{
+            return mDataFiltered.size();
+        }
+    }
+
     // filtering items by blood group
     @Override
     public Filter getFilter() {
@@ -72,32 +99,7 @@ public class HelplineAdapter extends RecyclerView.Adapter<HelplineAdapter.MyView
             }
         };
     }
-    @NonNull
-    @Override
-    public HelplineAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View row = LayoutInflater.from(myContext).inflate(R.layout.model_layout_for_helpline, parent, false);
-        return new MyViewHolder(row);
-    }
 
-    @Override
-    public void onBindViewHolder(@NonNull HelplineAdapter.MyViewHolder holder, int position) {
-
-        //making the whole cardView Animated
-        holder.cardViewSampleHelpLine.setAnimation(AnimationUtils.loadAnimation(myContext, R.anim.fade_scale_animation));
-        holder.textViewHelpLineName.setText(mDataFiltered.get(position).getAmbulanceName());
-        holder.textViewHelpLinePhoneNo.setText(mDataFiltered.get(position).getAmbulanceContactNumber());
-
-    }
-
-    @Override
-    public int getItemCount() {
-        if(mDataFiltered.size() == 0){
-            //Toast.makeText(myContext, "No Data Found", Toast.LENGTH_SHORT).show();
-            return 0;
-        }else{
-            return mDataFiltered.size();
-        }
-    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -110,7 +112,7 @@ public class HelplineAdapter extends RecyclerView.Adapter<HelplineAdapter.MyView
             super(itemView);
 
             cardViewSampleHelpLine = itemView.findViewById(R.id.model_card_view_item_helpline);
-            textViewHelpLineName = itemView.findViewById(R.id.textViewAmbulanceName);
+            textViewHelpLineName = itemView.findViewById(R.id.text_view_ambulance_name);
             textViewHelpLinePhoneNo = itemView.findViewById(R.id.textView_ambulance_phone_number);
             imageViewPhoneCallHelpLine = itemView.findViewById(R.id.imageView_call_ambulance);
 
