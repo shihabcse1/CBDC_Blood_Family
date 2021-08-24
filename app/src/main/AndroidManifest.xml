@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CBDCBloodFamily">
-        <activity android:name=".activities.HelplineShow"></activity>
+        <activity android:name=".activities.BloodBankShowActivity"></activity>
+        <activity android:name=".activities.HelplineShow" />
         <activity android:name=".activities.AddBloodBankActivity" />
         <activity android:name=".activities.AboutCBDC" />
         <activity android:name=".activities.AddHelplineActivity" />

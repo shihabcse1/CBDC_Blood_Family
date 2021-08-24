@@ -227,9 +227,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(addHelpLineActivity);
         }
 
-        if(item.getItemId() == R.id.nav_menu_helpline){
+        if(item.getItemId() == R.id.nav_menu_show_helpline){
             Intent helpLineActivity = new Intent(MainActivity.this, HelplineShow.class);
             startActivity(helpLineActivity);
+        }
+
+        if(item.getItemId() == R.id.nav_menu_show_blood_bank){
+            Intent showBloodBankActivity = new Intent(MainActivity.this, BloodBankShowActivity.class);
+            startActivity(showBloodBankActivity);
         }
 
         if(item.getItemId() == R.id.nav_menu_about_developer){
