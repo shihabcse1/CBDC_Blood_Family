@@ -78,7 +78,7 @@ public class BloodBankShowActivity extends AppCompatActivity {
         bloodBankRecyclerView.setAdapter(bloodBankAdapter);//this line added for checking
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("help_lines");
+        databaseReference = firebaseDatabase.getReference("blood_banks");
 
         editTextSearchInputBloodBank.addTextChangedListener(new TextWatcher() {
             @Override

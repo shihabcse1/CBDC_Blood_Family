@@ -11,15 +11,11 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.shihabcse.cbdcbloodfamily.R;
 import com.shihabcse.cbdcbloodfamily.models.BloodBank;
-import com.shihabcse.cbdcbloodfamily.models.HelpLine;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -117,7 +113,7 @@ public class BloodBankAdapter extends RecyclerView.Adapter<BloodBankAdapter.MyVi
             textViewBloodBankName = itemView.findViewById(R.id.text_view_blood_bank_name);
             textViewBloodBankPhoneNo = itemView.findViewById(R.id.textView_blood_bank_phone_number);
             textViewBloodBankAddress = itemView.findViewById(R.id.textView_blood_bank_address);
-            imageViewPhoneCallBloodBank = itemView.findViewById(R.id.imageView_call_ambulance);
+            imageViewPhoneCallBloodBank = itemView.findViewById(R.id.imageView_call_blood_bank);
 
             imageViewPhoneCallBloodBank.setOnClickListener(new View.OnClickListener() {
                 @Override
