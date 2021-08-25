@@ -322,12 +322,10 @@ public class AddBloodRequestActivity extends AppCompatActivity {
         });
 
 
-
-
     }
 
     private void notification() {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel =
                     new NotificationChannel("n", "n", NotificationManager.IMPORTANCE_DEFAULT);
             NotificationManager manager = getSystemService(NotificationManager.class);
@@ -414,12 +412,12 @@ public class AddBloodRequestActivity extends AppCompatActivity {
             return false;
         }
 
-        if (bloodGroup.equals("Select blood group")) {
+        if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
             Toast.makeText(this, "Select Your Blood Group", Toast.LENGTH_LONG).show();
             return false;
         }
 
-        if (district.equals("Select your district")) {
+        if (district.equals("Select your district") || district.equals("জেলা নির্বাচন")) {
             Toast.makeText(this, "Select Your District", Toast.LENGTH_LONG).show();
             return false;
         }

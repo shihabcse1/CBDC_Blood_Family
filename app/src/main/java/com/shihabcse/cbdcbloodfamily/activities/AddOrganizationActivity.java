@@ -91,9 +91,9 @@ public class AddOrganizationActivity extends AppCompatActivity {
 
                 } else {
 
-                    if(pickedImgUri != null){
+                    if (pickedImgUri != null) {
                         addOrganizationInfoWithoutPhoto(organizationName, organizationAdmin, organizationAdminContactNumber, organizationDistrict);
-                    }else{
+                    } else {
                         addOrganizationInfoWithoutPhoto(organizationName, organizationAdmin, organizationAdminContactNumber, organizationDistrict);
                     }
 
@@ -303,26 +303,21 @@ public class AddOrganizationActivity extends AppCompatActivity {
             editTextOrganizationName.requestFocus();
             return false;
         }
-
         if (organizationAdmin.isEmpty()) {
             editTextAdminName.setError("Please Enter Admin name!");
             editTextAdminName.requestFocus();
             return false;
         }
-
         if (organizationAdminContactNumber.isEmpty()) {
             editTextAdminContactNumber.setError("Please Enter Phone Number!");
             editTextAdminContactNumber.requestFocus();
             return false;
         }
-
-        if (organizationDistrict.equals("Select district")) {
+        if (organizationDistrict.equals("Select district") || organizationDistrict.equals("জেলা নির্বাচন")) {
             Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
             return false;
         }
-
         return true;
-
     }
 
     private void selectDistrictBySearch() {

@@ -241,7 +241,7 @@ public class AddNewDonorActivity extends AppCompatActivity {
                         bloodDonorOrganization = "N/A";
                     }
 
-                    if (lastBloodDonationDate.equals("Select Last Donation Date")) {
+                    if (lastBloodDonationDate.equals("Select Last Donation Date") || lastBloodDonationDate.equals("সর্বশেষ রক্তদান")) {
                         lastBloodDonationDate = "N/A";
                     }
 
@@ -420,12 +420,12 @@ public class AddNewDonorActivity extends AppCompatActivity {
             return false;
         }
 
-        if (address.equals("Select District")) {
+        if (address.equals("Select District") || address.equals("জেলা নির্বাচন")) {
             Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
             return false;
         }
 
-        if (bloodGroup.equals("Select blood group")) {
+        if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
             Toast.makeText(this, "Select Blood Group", Toast.LENGTH_LONG).show();
             return false;
         }
