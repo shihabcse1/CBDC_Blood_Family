@@ -57,11 +57,11 @@
 
                     <TextView
                         android:id="@+id/textView_blood_group_blood_donor"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="@string/o"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                         android:id="@+id/text_view_blood_donor_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Md. Shihab Uddin"
+                        android:text="@string/md_shihab_uddin"
                         android:textColor="@color/mid_dark"
                         android:textSize="18sp" />
 
@@ -96,15 +96,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textColor="@color/mid_dark"
-                        android:text="@string/dharmokam_sherpur_bogra" />
+                        android:text="@string/dharmokam_sherpur_bogra"
+                        android:textColor="@color/mid_dark" />
 
                     <TextView
                         android:id="@+id/textView_donation_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/mid_dark"
-                        android:text="Ready to donate : Yes" />
+                        android:text="@string/ready_to_donate_yes"
+                        android:textColor="@color/mid_dark" />
 
                 </LinearLayout>
 
@@ -122,9 +122,9 @@
 
                     <ImageView
                         android:id="@+id/imageView_call"
-                        android:layout_gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
+                        android:layout_gravity="center"
                         android:layout_marginBottom="1dp"
                         android:contentDescription="@string/call_button"
                         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -134,7 +134,6 @@
                         app:srcCompat="@drawable/phone" />
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
@@ -149,20 +148,22 @@
                 android:id="@+id/text_view_last_donation_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginLeft="5dp"
-                android:textColor="@color/mid_dark"
-                android:text="@string/last_donation_date_25_10_2020" />
+                android:text="@string/last_donation_date_25_10_2020"
+                android:textColor="@color/mid_dark" />
 
             <TextView
                 android:id="@+id/text_view_donor_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginBottom="5dp"
-                android:textColor="@color/mid_dark"
-                android:text="@string/phone_number_01723000000" />
+                android:text="@string/phone_number_01723000000"
+                android:textColor="@color/mid_dark" />
 
         </LinearLayout>
+
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

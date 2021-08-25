@@ -57,11 +57,11 @@
 
                     <TextView
                         android:id="@+id/textView_blood_group"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="@string/o"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
@@ -165,7 +165,7 @@
                 android:id="@+id/text_view_patient_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
                 android:text="@string/patient_type_cancer"
                 android:textColor="@color/black" />
@@ -174,7 +174,7 @@
                 android:id="@+id/text_view_contact_with"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/contact_with_mr_x"
                 android:textColor="@color/black" />
 
@@ -182,7 +182,7 @@
                 android:id="@+id/text_view_contact_with_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/phone_number_017"
                 android:textColor="@color/black" />
@@ -190,5 +190,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
 

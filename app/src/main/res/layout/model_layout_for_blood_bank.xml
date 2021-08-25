@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/model_card_view_item_blood_bank"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/softblacknew"
     app:cardCornerRadius="3dp"
     app:cardElevation="2dp"
@@ -11,9 +11,9 @@
     app:contentPadding="1dp">
 
     <LinearLayout
-        android:background="@drawable/edittext_rectangle_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/edittext_rectangle_style"
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="13">
@@ -27,16 +27,16 @@
             android:padding="5dp">
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/text_view_blood_bank_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Idgor Blood Bank"
+                    android:text="@string/idgor_blood_bank"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -44,7 +44,7 @@
                     android:id="@+id/textView_blood_bank_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mirpur, Dhaka, Bangladesh"
+                    android:text="@string/mirpur_dhaka_bangladesh"
                     android:textColor="@color/black"
                     android:textSize="13sp" />
 
@@ -52,7 +52,7 @@
                     android:id="@+id/textView_blood_bank_phone_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="0635468393932"
+                    android:text="@string/_0635468393932"
                     android:textColor="@color/black"
                     android:textSize="13sp" />
 
@@ -63,15 +63,15 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="2"
-            android:gravity="center"
-            android:layout_gravity="center">
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imageView_call_blood_bank"
-                android:layout_gravity="center"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:contentDescription="@string/call_button"
                 app:srcCompat="@drawable/phone" />

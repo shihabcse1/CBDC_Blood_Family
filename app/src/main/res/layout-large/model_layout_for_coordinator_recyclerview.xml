@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="#CE93D8"
+    app:cardBackgroundColor="@color/softblacknew"
     app:cardCornerRadius="3dp"
     app:cardElevation="2dp"
     app:cardUseCompatPadding="true"
-    app:contentPadding="5dp">
+    app:contentPadding="1dp">
 
     <LinearLayout
         android:background="@drawable/edittext_rectangle_style"

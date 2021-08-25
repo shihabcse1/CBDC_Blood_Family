@@ -7,16 +7,16 @@
     tools:context=".activities.EditProfilePageActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
             android:text="@string/enter_your_phone_number"
             android:textColor="@color/black" />
 
@@ -24,9 +24,9 @@
             android:id="@+id/editTextText_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/phone_number"
@@ -35,15 +35,15 @@
 
         <TextView
             android:id="@+id/textView_select_blood_group_edited"
-            android:background="@drawable/edittext_rectangle_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="14dp"
             android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
-            android:hint="@string/select_blood_group"
+            android:background="@drawable/edittext_rectangle_style"
             android:gravity="center_vertical"
+            android:hint="@string/select_blood_group"
+            android:padding="14dp"
             android:text="@string/select_blood_group"
             android:textColor="@color/black"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
@@ -52,9 +52,9 @@
             android:id="@+id/editTextText_user_country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/country"
@@ -63,28 +63,27 @@
 
         <TextView
             android:id="@+id/textView_select_district"
-            android:background="@drawable/edittext_rectangle_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="14dp"
             android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
-            android:hint="@string/select_district"
+            android:background="@drawable/edittext_rectangle_style"
             android:gravity="center_vertical"
+            android:hint="@string/select_district"
+            android:padding="14dp"
             android:text="@string/select_your_district"
             android:textColor="@color/black"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
-
 
 
         <EditText
             android:id="@+id/editTextText_user_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/city"
@@ -95,9 +94,9 @@
             android:id="@+id/editTextText_user_organization"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/organization"
@@ -105,28 +104,27 @@
             android:maxLength="40" />
 
 
-
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
             android:weightSum="2">
 
             <TextView
-                android:text="@string/ready_to_donate"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="@string/ready_to_donate"
+                android:textColor="@color/black" />
 
             <CheckBox
                 android:id="@+id/checkBox_donate_status"
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/yes" />
 
         </LinearLayout>
@@ -140,7 +138,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             android:background="@drawable/button_rectangle_style"
-            android:text="@string/update"/>
+            android:text="@string/update" />
 
 
     </LinearLayout>

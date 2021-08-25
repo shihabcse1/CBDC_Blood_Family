@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_rectangle_style"
         android:gravity="center"
-        android:text="Orgnization"
+        android:text="@string/organization"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="3dp"

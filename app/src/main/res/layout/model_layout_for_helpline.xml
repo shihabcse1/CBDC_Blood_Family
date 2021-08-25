@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/model_card_view_item_helpline"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/softblacknew"
     app:cardCornerRadius="3dp"
     app:cardElevation="2dp"
@@ -11,9 +11,9 @@
     app:contentPadding="1dp">
 
     <LinearLayout
-        android:background="@drawable/edittext_rectangle_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/edittext_rectangle_style"
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="13">
@@ -27,16 +27,16 @@
             android:padding="5dp">
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/text_view_ambulance_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="National Emergency Number"
+                    android:text="@string/national_emergency_number"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -44,7 +44,7 @@
                     android:id="@+id/textView_ambulance_phone_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="999"
+                    android:text="@string/_999"
                     android:textColor="@color/black"
                     android:textSize="13sp" />
 
@@ -55,15 +55,15 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="2"
-            android:gravity="center"
-            android:layout_gravity="center">
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imageView_call_ambulance"
-                android:layout_gravity="center"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:contentDescription="@string/call_button"
                 app:srcCompat="@drawable/phone" />

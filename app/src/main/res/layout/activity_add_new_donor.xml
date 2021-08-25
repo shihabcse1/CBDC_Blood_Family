@@ -81,7 +81,7 @@
             android:layout_marginRight="32dp"
             android:hint="@string/select_district"
             android:gravity="center_vertical"
-            android:text="Select District"
+            android:text="@string/select_district"
             android:textColor="@color/black"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
@@ -94,7 +94,7 @@
             android:layout_marginRight="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:gravity="center"
-            android:text="Select Last Donation Date"
+            android:text="@string/select_last_donation_date"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
