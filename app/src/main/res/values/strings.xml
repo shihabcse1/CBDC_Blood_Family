@@ -121,4 +121,6 @@
     <string name="national_emergency_number">National Emergency Number</string>
     <string name="_999">999</string>
     <string name="user_photo">User Photo</string>
+    <string name="bn">BN</string>
+    <string name="en">EN</string>
 </resources>

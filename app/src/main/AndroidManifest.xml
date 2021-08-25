@@ -12,13 +12,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CBDCBloodFamily">
-        <activity android:name=".activities.BloodBankShowActivity"></activity>
-        <activity android:name=".activities.HelplineShow" />
-        <activity android:name=".activities.AddBloodBankActivity" />
-        <activity android:name=".activities.AboutCBDC" />
-        <activity android:name=".activities.AddHelplineActivity" />
-        <activity android:name=".activities.SearchBloodDonorActivity" />
-        <activity android:name=".activities.SearchBloodDonorConditionActivity" />
+        <activity android:name=".activities.BloodBankShowActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.HelplineShow"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.AddBloodBankActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.AboutCBDC"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.AddHelplineActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.SearchBloodDonorActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.SearchBloodDonorConditionActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
         <activity
             android:name=".activities.DonateUsActivity"
             android:screenOrientation="portrait"
@@ -61,11 +82,10 @@
             android:parentActivityName=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
-        <activity
-            android:name=".activities.RegisterActivity"
-            android:parentActivityName=".activities.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light" />
+        android:name=".activities.RegisterActivity"
+        android:parentActivityName=".activities.LoginActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

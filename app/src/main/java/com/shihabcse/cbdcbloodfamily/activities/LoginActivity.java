@@ -76,11 +76,11 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (switchCompat.isChecked()) {
 
-                    setLocale("bn");
+                    setLocale("en");
 
                 } else {
 
-                    setLocale("en");
+                    setLocale("bn");
 
                 }
                 recreate();
