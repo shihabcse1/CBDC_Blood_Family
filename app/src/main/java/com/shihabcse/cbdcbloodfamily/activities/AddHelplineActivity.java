@@ -1,8 +1,5 @@
 package com.shihabcse.cbdcbloodfamily.activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -21,13 +18,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.shihabcse.cbdcbloodfamily.R;
-import com.shihabcse.cbdcbloodfamily.models.BloodDonor;
 import com.shihabcse.cbdcbloodfamily.models.HelpLine;
 
 import java.util.ArrayList;
@@ -142,8 +140,8 @@ public class AddHelplineActivity extends AppCompatActivity {
 
                     //buttonRegister.setVisibility(View.VISIBLE);
 
-                }else{
-                    if(checkBoxAmbulanceStatus.isChecked()){
+                } else {
+                    if (checkBoxAmbulanceStatus.isChecked()) {
                         bloodDonationStatus = "Yes";
                     }
                     HelpLine helpLine = new HelpLine(ambulanceName,
@@ -200,7 +198,7 @@ public class AddHelplineActivity extends AppCompatActivity {
 
     private boolean isUserInputValidation(String ambulanceName, String ambulancePhoneNumber, String ambulanceSelectDistrict, String ambulanceUniversityOrUpazila) {
 
-        if(ambulanceName.isEmpty()) {
+        if (ambulanceName.isEmpty()) {
             editTextAmbulanceName.setError("Please enter ambulance name!");
             editTextAmbulanceName.requestFocus();
             return false;
@@ -218,7 +216,7 @@ public class AddHelplineActivity extends AppCompatActivity {
             return false;
         }
 
-        if (ambulanceSelectDistrict.equals("Select District")) {
+        if (ambulanceSelectDistrict.equals("Select District") || ambulanceSelectDistrict.equals("জেলা নির্বাচন")) {
             Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
             return false;
         }

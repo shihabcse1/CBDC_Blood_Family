@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.AddBloodRequestActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:text="@string/enter_patient_name"
             android:textColor="@color/black" />
 
@@ -23,9 +24,9 @@
             android:id="@+id/editTextText_patient_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/name"
@@ -36,8 +37,8 @@
             android:id="@+id/textViewNumberOfBloodBag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
             android:text="@string/quantity_how_many_bags"
             android:textColor="@color/black" />
 
@@ -45,9 +46,9 @@
             android:id="@+id/editTextText_blood_quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/example_2"
@@ -58,8 +59,8 @@
             android:id="@+id/textViewPatientType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
             android:text="@string/patient_type"
             android:textColor="@color/black" />
 
@@ -67,9 +68,9 @@
             android:id="@+id/editTextText_patient_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/example_cancer"
@@ -80,9 +81,9 @@
             android:id="@+id/editTextText_patient_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/phone_number"
@@ -91,41 +92,41 @@
 
         <TextView
             android:id="@+id/textView_select_blood_group_patient"
-            android:background="@drawable/edittext_rectangle_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="14dp"
             android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
-            android:hint="@string/select_blood_group"
+            android:background="@drawable/edittext_rectangle_style"
             android:gravity="center_vertical"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:hint="@string/select_blood_group"
+            android:padding="14dp"
             android:text="@string/select_blood_group"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
         <TextView
             android:id="@+id/textView_select_district_patient"
-            android:background="@drawable/edittext_rectangle_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="14dp"
             android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
-            android:hint="@string/select_district"
+            android:background="@drawable/edittext_rectangle_style"
             android:gravity="center_vertical"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-            android:text="Select your district"
-            android:textColor="@color/black" />
+            android:hint="@string/select_district"
+            android:padding="14dp"
+            android:text="@string/select_your_district"
+            android:textColor="@color/black"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
         <EditText
             android:id="@+id/editTextText_patient_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
             android:hint="@string/city"
@@ -133,13 +134,12 @@
             android:maxLength="40" />
 
 
-
         <TextView
             android:id="@+id/textView_blood_needed_date"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:gravity="center"
@@ -156,26 +156,24 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="20dp"
-            android:textColor="@color/white"
             android:background="@drawable/button_rectangle_style"
-            android:text="@string/submit"/>
+            android:text="@string/submit"
+            android:textColor="@color/white" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
-            <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/adView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-6210048043141055/7968118572">
-            </com.google.android.gms.ads.AdView>
+                ads:adUnitId="ca-app-pub-6210048043141055/7968118572"></com.google.android.gms.ads.AdView>
 
         </LinearLayout>
 

@@ -3,9 +3,8 @@
     <string name="app_name">CBDC Blood Family</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello Blood fragment</string>
-    <string name="md_shihab_uddin">Md. Shihab Uddin</string>
+    <string name="md_shihab_uddin">মোঃ শিহাব উদ্দিন</string>
     <string name="duet_gazipur_bangladesh">DUET, Gazipur, Bangladesh</string>
     <string name="about_me">About Me</string>
     <string name="shihab">shihab</string>
@@ -83,4 +82,20 @@
     <string name="contact_no">Contact No</string>
     <string name="address">Address</string>
     <string name="enter_address">Enter Address</string>
+    <string name="logo">logo</string>
+    <string name="founder">Founder</string>
+    <string name="md_abdul_halim">Md Abdul Halim</string>
+    <string name="admin">Admin</string>
+    <string name="shamsul_alam_srabon">Shamsul Alam Srabon</string>
+    <string name="co_admin">Co-Admin</string>
+    <string name="shohel_rana">Shohel Rana</string>
+    <string name="helal_uddin">Helal Uddin</string>
+    <string name="syed_mohammad_imran">Syed Mohammad Imran</string>
+    <string name="call">Call</string>
+    <string name="msg">Msg</string>
+    <string name="ambulance_name">Ambulance Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="ready_to_service">Ready to Service</string>
+    <string name="upozila_university_name">Upozila/University Name</string>
+    <string name="upazila_university">Upazila/University</string>
 </resources>

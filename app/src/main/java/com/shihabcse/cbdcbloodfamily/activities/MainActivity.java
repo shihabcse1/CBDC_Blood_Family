@@ -237,6 +237,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(showBloodBankActivity);
         }
 
+        if(item.getItemId() == R.id.nav_menu_about_us){
+            Intent showAboutUs = new Intent(MainActivity.this, AboutCBDC.class);
+            startActivity(showAboutUs);
+        }
+
         if(item.getItemId() == R.id.nav_menu_about_developer){
 
             myDialog.setContentView(R.layout.activity_about_developer);

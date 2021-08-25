@@ -58,8 +58,8 @@ public class LoginActivity extends AppCompatActivity {
         // load language selection
         loadLocale();
         // for changing the language of ActionBar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
+        //ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle(getResources().getString(R.string.app_name));
         
         mAuth = FirebaseAuth.getInstance();
         switchCompat = findViewById(R.id.switch_language);
@@ -95,17 +95,9 @@ public class LoginActivity extends AppCompatActivity {
                 final String password = editTextLoginPassword.getText().toString().trim();
 
                 if (!isUserInputValidation(mail, password)) {
-
                     //buttonLogIn.setVisibility(View.VISIBLE);
-                    //progressBarLogin.setVisibility(View.INVISIBLE);
-
                 } else {
-
-                    //buttonLogIn.setVisibility(View.INVISIBLE);
-                    //progressBarLogin.setVisibility(View.VISIBLE);
-                    // signing in by mail and password
                     signIn(mail, password);
-
                 }
                 
             }
@@ -177,8 +169,6 @@ public class LoginActivity extends AppCompatActivity {
                         } else {
                             progressDialog.dismiss();
                             showMessage(task.getException().getMessage());
-                            //buttonLogIn.setVisibility(View.VISIBLE);
-                            //progressBarLogin.setVisibility(View.INVISIBLE);
                         }
                     }
                 });

@@ -23,7 +23,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -52,45 +53,45 @@
 
             <TextView
                 android:gravity="center"
-                android:text="Founder"
+                android:text="@string/founder"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Md Abdul Halim"
+                android:text="@string/md_abdul_halim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
                 android:textStyle="bold"
-                android:text="Admin"
+                android:text="@string/admin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Shamsul Alam Srabon"
+                android:text="@string/shamsul_alam_srabon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Co-Admin"
+                android:text="@string/co_admin"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Shohel Rana"
+                android:text="@string/shohel_rana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Helal Uddin"
+                android:text="@string/helal_uddin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:gravity="center"
-                android:text="Syed Mohammad Imran"
+                android:text="@string/syed_mohammad_imran"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

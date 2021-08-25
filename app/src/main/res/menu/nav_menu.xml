@@ -2,53 +2,69 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:title="Edit Information"
+        <item
             android:id="@+id/nav_menu_edit_information"
-            android:icon="@drawable/ic_baseline_edit_24"/>
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="@string/edit_information" />
 
-        <item android:title="Add Blood Request"
+        <item
             android:id="@+id/nav_menu_add_blood_request"
-            android:icon="@drawable/ic_baseline_add_circle_outline_24"/>
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="@string/add_blood_request" />
 
-        <item android:title="Add New Donor"
+        <item
             android:id="@+id/nav_menu_add_donor"
-            android:icon="@drawable/ic_baseline_person_add_24"/>
+            android:icon="@drawable/ic_baseline_person_add_24"
+            android:title="@string/add_new_donor" />
 
-        <item android:title="Add Coordinator"
+        <item
             android:id="@+id/nav_menu_add_coordinator"
-            android:icon="@drawable/ic_baseline_person_add_alt_1_24"/>
+            android:icon="@drawable/ic_baseline_person_add_alt_1_24"
+            android:title="@string/add_coordinator" />
 
-        <item android:title="Add Organization"
+        <item
             android:id="@+id/nav_menu_add_organization"
-            android:icon="@drawable/ic_baseline_group_add_24"/>
+            android:icon="@drawable/ic_baseline_group_add_24"
+            android:title="@string/add_organization" />
 
-        <item android:title="Add Blood Bank"
+        <item
             android:id="@+id/nav_menu_add_blood_bank"
-            android:icon="@drawable/ic_baseline_add_circle_24"/>
+            android:icon="@drawable/ic_baseline_add_circle_24"
+            android:title="@string/add_blood_bank" />
 
-        <item android:title="@string/add_helpline"
+        <item
             android:id="@+id/nav_menu_add_helpline"
-            android:icon="@drawable/ic_baseline_add_circle_24"/>
+            android:icon="@drawable/ic_baseline_add_circle_24"
+            android:title="@string/add_helpline" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/communicate">
         <menu>
-            <item android:id="@+id/nav_menu_donate_us"
+            <item
+                android:id="@+id/nav_menu_donate_us"
                 android:icon="@drawable/ic_baseline_donate_on_24"
-                android:title="Donate Us"/>
-            <item android:id="@+id/nav_menu_show_blood_bank"
+                android:title="@string/donate_us" />
+            <item
+                android:id="@+id/nav_menu_show_blood_bank"
                 android:icon="@drawable/ic_baseline_connect_without_contact_24"
-                android:title="Show Blood Bank"/>
-            <item android:id="@+id/nav_menu_show_helpline"
+                android:title="@string/show_blood_bank" />
+            <item
+                android:id="@+id/nav_menu_show_helpline"
                 android:icon="@drawable/ic_baseline_connect_without_contact_24"
-                android:title="Show Helpline"/>
-            <item android:id="@+id/nav_menu_about_developer"
+                android:title="@string/show_helpline" />
+            <item
+                android:id="@+id/nav_menu_about_us"
+                android:icon="@drawable/ic_baseline_connect_without_contact_24"
+                android:title="@string/about_us" />
+            <item
+                android:id="@+id/nav_menu_about_developer"
                 android:icon="@drawable/ic_baseline_person_24"
-                android:title="About Devloper"/>
-            <item android:title="Sign Out"
+                android:title="@string/about_developer" />
+            <item
                 android:id="@+id/menu_sign_out"
-                android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="@string/sign_out" />
         </menu>
     </item>
 </menu>
