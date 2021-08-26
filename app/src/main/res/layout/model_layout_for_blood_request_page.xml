@@ -87,7 +87,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/quantity_bag_2"
-                        android:textColor="@color/black"
+                        android:textColor="@color/mid_dark"
                         android:textSize="18sp" />
 
                     <TextView
@@ -96,14 +96,14 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="@string/dharmokam_sherpur_bogra"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/mid_dark" />
 
                     <TextView
                         android:id="@+id/textView_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/date_24_07_2021"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/mid_dark" />
 
                 </LinearLayout>
 
@@ -168,7 +168,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
                 android:text="@string/patient_type_cancer"
-                android:textColor="@color/black" />
+                android:textColor="@color/mid_dark" />
 
             <TextView
                 android:id="@+id/text_view_contact_with"
@@ -176,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:text="@string/contact_with_mr_x"
-                android:textColor="@color/black" />
+                android:textColor="@color/mid_dark" />
 
             <TextView
                 android:id="@+id/text_view_contact_with_phone_number"
@@ -185,7 +185,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/phone_number_017"
-                android:textColor="@color/black" />
+                android:textColor="@color/mid_dark" />
 
         </LinearLayout>
 

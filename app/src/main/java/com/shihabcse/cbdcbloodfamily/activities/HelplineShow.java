@@ -53,7 +53,7 @@ public class HelplineShow extends AppCompatActivity {
                 }
 
                 //progressDialog.dismiss();
-                helplineAdapter = new HelplineAdapter(getApplicationContext(), helpLineList);
+                helplineAdapter = new HelplineAdapter(HelplineShow.this, helpLineList);
                 helplineRecyclerView.setAdapter(helplineAdapter);
 
             }

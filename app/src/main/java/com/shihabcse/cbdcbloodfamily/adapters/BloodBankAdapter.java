@@ -14,6 +14,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 import com.shihabcse.cbdcbloodfamily.R;
 import com.shihabcse.cbdcbloodfamily.models.BloodBank;
 import java.util.ArrayList;
@@ -43,9 +45,9 @@ public class BloodBankAdapter extends RecyclerView.Adapter<BloodBankAdapter.MyVi
 
         //making the whole cardView Animated
         holder.cardViewSampleBloodBank.setAnimation(AnimationUtils.loadAnimation(myContext, R.anim.fade_scale_animation));
-        holder.textViewBloodBankName.setText(mDataFiltered.get(position).getBloodBankName());
-        holder.textViewBloodBankAddress.setText(mDataFiltered.get(position).getBloodBankAddress());
-        holder.textViewBloodBankPhoneNo.setText(mDataFiltered.get(position).getBloodBankContactNumber());
+        holder.textViewBloodBankName.setText("Name: " +mDataFiltered.get(position).getBloodBankName());
+        holder.textViewBloodBankAddress.setText("Address: " +mDataFiltered.get(position).getBloodBankAddress());
+        holder.textViewBloodBankPhoneNo.setText("Phone: " +mDataFiltered.get(position).getBloodBankContactNumber());
 
     }
 

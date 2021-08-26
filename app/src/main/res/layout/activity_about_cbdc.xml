@@ -20,11 +20,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/logo"
+            android:contentDescription="@string/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/logo" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -51,49 +51,81 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:gravity="center"
-                android:text="@string/founder"
-                android:textStyle="bold"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
                 android:gravity="center"
-                android:text="@string/md_abdul_halim"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:textStyle="bold"
-                android:text="@string/admin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="@string/shamsul_alam_srabon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="@string/co_admin"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="@string/shohel_rana"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="@string/helal_uddin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="@string/syed_mohammad_imran"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:orientation="vertical"
+                android:background="@drawable/about_me_button_style">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/founder"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/md_abdul_halim" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/admin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/shamsul_alam_srabon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/mid_dark"
+                    android:text="@string/co_admin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/shohel_rana" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/helal_uddin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mid_dark"
+                    android:gravity="center"
+                    android:text="@string/syed_mohammad_imran" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="----------" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

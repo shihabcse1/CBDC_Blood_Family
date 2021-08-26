@@ -57,7 +57,7 @@ public class SearchCoordinatorActivity extends AppCompatActivity {
 
                 //progressDialog.dismiss();
 
-                coordinatorAdapter = new CoordinatorAdapter(getApplicationContext(), coordinatorList);
+                coordinatorAdapter = new CoordinatorAdapter(SearchCoordinatorActivity.this, coordinatorList);
                 coordinatorRecyclerView.setAdapter(coordinatorAdapter);
 
             }

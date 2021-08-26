@@ -47,7 +47,6 @@ public class OrganizationAdapter extends RecyclerView.Adapter<OrganizationAdapte
 
         //making the whole cardView Animated
         holder.cardViewSampleOrganization.setAnimation(AnimationUtils.loadAnimation(myContext, R.anim.fade_scale_animation));
-        //TODO here
         holder.textViewOrganizationName.setText(mDataFiltered.get(position).getOrganizationName());
         holder.textViewOrganizationAdminName.setText("Admin/Director : " +mDataFiltered.get(position).getAdminName());
         holder.textViewOrganizationAdminPN.setText(mDataFiltered.get(position).getAdminContactNumber());

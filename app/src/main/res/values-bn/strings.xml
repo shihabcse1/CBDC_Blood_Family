@@ -54,7 +54,7 @@
     <string name="search_by_blood_group">রক্তের গ্রুপ অনুসারে খুঁজুন</string>
     <string name="search_by_coordinator_name">সমন্বয়কের নাম অনুসারে খুঁজুন</string>
     <string name="search_by_organization_name">প্রতিষ্ঠানের নাম অনুসারে খুঁজুন</string>
-    <string name="blood_request">Blood Request</string>
+    <string name="blood_request">রক্তের অনুরোধ</string>
     <string name="coordinator">সমন্বয়ক</string>
     <string name="select_city">শহর</string>
     <string name="search">অনুসন্ধান</string>
@@ -114,7 +114,7 @@
     <string name="select_last_donation_date">সর্বশেষ রক্তদান</string>
     <string name="search_by_blood_bank_name">ব্লাডব্যাংকের নাম অনুসারে খুঁজুন</string>
     <string name="search_by_ambulance_name">এম্বুলেন্সের নাম অনুসারে খুঁজুন</string>
-    <string name="blood_donor">রক্তদাতা</string>
+    <string name="blood_donor">রক্তদাতা তালিকা</string>
     <string name="idgor_blood_bank">CBDC Blood Bank</string>
     <string name="mirpur_dhaka_bangladesh">Mirpur, Dhaka, Bangladesh</string>
     <string name="_0635468393932">0635468393932</string>

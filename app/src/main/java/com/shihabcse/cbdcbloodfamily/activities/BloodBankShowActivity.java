@@ -54,7 +54,7 @@ public class BloodBankShowActivity extends AppCompatActivity {
 
                 }
                 //progressDialog.dismiss();
-                bloodBankAdapter = new BloodBankAdapter(getApplicationContext(), bloodBankList);
+                bloodBankAdapter = new BloodBankAdapter(BloodBankShowActivity.this, bloodBankList);
                 bloodBankRecyclerView.setAdapter(bloodBankAdapter);
 
             }

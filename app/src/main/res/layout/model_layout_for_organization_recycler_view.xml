@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView_sample_item_organization"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/softblacknew"
     app:cardCornerRadius="3dp"
     app:cardElevation="1dp"
@@ -11,82 +11,82 @@
     app:contentPadding="1dp">
 
     <LinearLayout
-        android:background="@drawable/card_item_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/card_item_style"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:background="@drawable/edittext_rectangle_style"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
-        android:weightSum="13">
-
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="11"
+            android:background="@drawable/edittext_rectangle_style"
             android:baselineAligned="false"
             android:orientation="horizontal"
-            android:padding="1dp">
+            android:weightSum="13">
 
             <LinearLayout
-                android:gravity="center"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_weight="11"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="1dp">
 
-                <TextView
-                    android:id="@+id/text_view_organization_name_recylclerview"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/organization_name_dummy"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView_admin_name_organization"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/admin_name_dummy"
-                    android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/text_view_organization_name_recylclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/organization_name_dummy"
+                        android:textColor="@color/mid_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_admin_name_organization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/admin_name_dummy"
+                        android:textColor="@color/mid_dark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView_call_organization_admin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:contentDescription="@string/call_button"
+                    app:srcCompat="@drawable/call_blue_a" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:layout_gravity="center">
-
-            <ImageView
-                android:id="@+id/imageView_call_organization_admin"
-                android:layout_gravity="center"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="1dp"
-                android:contentDescription="@string/call_button"
-                app:srcCompat="@drawable/phone" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
         <TextView
-            android:padding="2dp"
+            android:id="@+id/text_view_Admin_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
-            android:textColor="@color/black"
-            android:id="@+id/text_view_Admin_phone_number"
+            android:padding="2dp"
             android:text="@string/phone_01871429133"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/mid_dark" />
 
     </LinearLayout>
 

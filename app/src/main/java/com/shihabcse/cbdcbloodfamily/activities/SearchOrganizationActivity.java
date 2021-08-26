@@ -54,7 +54,7 @@ public class SearchOrganizationActivity extends AppCompatActivity {
 
                 //progressDialog.dismiss();
 
-                organizationAdapter = new OrganizationAdapter(getApplicationContext(), organizationsList);
+                organizationAdapter = new OrganizationAdapter(SearchOrganizationActivity.this, organizationsList);
                 organizationRecyclerView.setAdapter(organizationAdapter);
 
             }
