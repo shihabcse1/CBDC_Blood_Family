@@ -18,7 +18,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:text="@string/enter_blood_donor_name"
-            android:textColor="@color/black" />
+            android:textColor="@color/mid_dark" />
 
         <EditText
             android:id="@+id/editTextText_blood_donor_name"
@@ -40,7 +40,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="10dp"
             android:text="@string/contact_number"
-            android:textColor="@color/black" />
+            android:textColor="@color/mid_dark" />
 
         <EditText
             android:id="@+id/editTextText_number_of_contact_number"
@@ -67,7 +67,7 @@
             android:hint="@string/select_blood_group"
             android:padding="14dp"
             android:text="@string/select_blood_group"
-            android:textColor="@color/black"
+            android:textColor="@color/mid_dark"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
         <TextView
@@ -82,7 +82,7 @@
             android:hint="@string/select_district"
             android:gravity="center_vertical"
             android:text="@string/select_district"
-            android:textColor="@color/black"
+            android:textColor="@color/mid_dark"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
         <TextView
@@ -95,7 +95,7 @@
             android:background="@drawable/edittext_rectangle_style"
             android:gravity="center"
             android:text="@string/select_last_donation_date"
-            android:textColor="@color/black"
+            android:textColor="@color/mid_dark"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -123,7 +123,7 @@
 
             <TextView
                 android:text="@string/ready_to_donate"
-                android:textColor="@color/black"
+                android:textColor="@color/mid_dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
@@ -133,6 +133,7 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/mid_dark"
                 android:text="@string/yes" />
 
         </LinearLayout>
@@ -147,6 +148,19 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/button_rectangle_style"
             android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/textView_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/mid_dark"
+            android:background="@drawable/search_input_style"
+            android:text="@string/note" />
+
 
         <LinearLayout
             android:orientation="vertical"

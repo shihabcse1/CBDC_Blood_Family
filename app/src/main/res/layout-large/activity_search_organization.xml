@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/editText_search_input_organization"
         android:drawablePadding="8dp"
-        android:textColor="@color/white"
+        android:textColor="@color/mid_dark"
         android:drawableStart="@drawable/ic_baseline_search_24"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
-        android:background="@drawable/search_input_style"
+        android:background="@drawable/edittext_rectangle_style"
         android:ems="10"
         android:hint="@string/search_by_organization_name"
         android:inputType="textPersonName"

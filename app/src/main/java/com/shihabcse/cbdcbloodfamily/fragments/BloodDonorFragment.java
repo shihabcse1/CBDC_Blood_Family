@@ -73,6 +73,8 @@ public class BloodDonorFragment extends Fragment {
 
         super.onStart();
 
+        Toast.makeText(getContext(), "রক্তদাতা খুঁজে পেতে সকল প্রকার আর্থিক লেনদেন থেকে বিরত থাকুন", Toast.LENGTH_SHORT).show();
+
         // Get List Posts from the database
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -147,6 +149,7 @@ public class BloodDonorFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getContext(), "রক্তদাতা খুঁজে পেতে সকল প্রকার আর্থিক লেনদেন থেকে বিরত থাকুন", Toast.LENGTH_LONG).show();
                 Intent searchBloodDonorConditionActivity = new Intent(getContext(), SearchBloodDonorConditionActivity.class);
                 startActivity(searchBloodDonorConditionActivity);
             }

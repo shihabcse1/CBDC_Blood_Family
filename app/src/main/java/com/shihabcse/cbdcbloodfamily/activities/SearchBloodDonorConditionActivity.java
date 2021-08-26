@@ -96,7 +96,7 @@ public class SearchBloodDonorConditionActivity extends AppCompatActivity {
 
                 //progressDialog.dismiss();
 
-                bloodDonorAdapter = new BloodDonorAdapter(getApplicationContext(), bloodDonorstList);
+                bloodDonorAdapter = new BloodDonorAdapter(SearchBloodDonorConditionActivity.this, bloodDonorstList);
                 bloodDonorRecyclerView.setAdapter(bloodDonorAdapter);
 
             }

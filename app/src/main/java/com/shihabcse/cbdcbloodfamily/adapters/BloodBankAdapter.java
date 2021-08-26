@@ -45,7 +45,7 @@ public class BloodBankAdapter extends RecyclerView.Adapter<BloodBankAdapter.MyVi
 
         //making the whole cardView Animated
         holder.cardViewSampleBloodBank.setAnimation(AnimationUtils.loadAnimation(myContext, R.anim.fade_scale_animation));
-        holder.textViewBloodBankName.setText("Name: " +mDataFiltered.get(position).getBloodBankName());
+        holder.textViewBloodBankName.setText(mDataFiltered.get(position).getBloodBankName());
         holder.textViewBloodBankAddress.setText("Address: " +mDataFiltered.get(position).getBloodBankAddress());
         holder.textViewBloodBankPhoneNo.setText("Phone: " +mDataFiltered.get(position).getBloodBankContactNumber());
 

@@ -98,10 +98,11 @@
             android:parentActivityName=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
-        android:name=".activities.RegisterActivity"
-        android:parentActivityName=".activities.LoginActivity"
-        android:screenOrientation="portrait"
-        android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

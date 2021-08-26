@@ -94,13 +94,6 @@ public class SearchBloodDonorActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("blood_donors");
 
-
-
-
-        //blood = getIntent().getExtras().getString("blood");
-        //dist = getIntent().getExtras().getString("dist");
-
-
         editTextSearchInputNew.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -109,8 +102,6 @@ public class SearchBloodDonorActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-
 
             }
 

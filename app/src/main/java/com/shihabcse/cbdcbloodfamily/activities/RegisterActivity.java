@@ -142,21 +142,6 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 });
 
-        /*RegisterUser registerUser = new RegisterUser(
-                name,
-                email,
-                phoneNumber,
-                bloodGroup,
-                district,
-                city,
-                organization,
-                bloodDonationStatus
-        );*/
-
-        // add all data to firebase Database
-        //addDataToDatabase(registerUser);
-
-
     }
 
     private void updateUI() {
