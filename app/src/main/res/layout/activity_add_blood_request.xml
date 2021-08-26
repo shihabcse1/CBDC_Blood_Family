@@ -77,6 +77,15 @@
             android:inputType="textPersonName"
             android:maxLength="40" />
 
+        <TextView
+            android:id="@+id/textView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/mid_dark" />
+
         <EditText
             android:id="@+id/editTextText_patient_phone_number"
             android:layout_width="match_parent"
@@ -86,7 +95,7 @@
             android:layout_marginRight="32dp"
             android:background="@drawable/edittext_rectangle_style"
             android:ems="10"
-            android:hint="@string/phone_number"
+            android:hint="@string/ex_01xxxxxxxxx"
             android:inputType="phone"
             android:maxLength="40" />
 

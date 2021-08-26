@@ -31,7 +31,7 @@
     <string name="enter_coordinator_name">Enter Coordinator Name</string>
     <string name="contact_number">Contact Number</string>
     <string name="ex_01xxxxxxxxx">Ex : 01xxxxxxxxx</string>
-    <string name="enter_app_admin_password">Enter App Admin Password</string>
+    <string name="enter_app_admin_password">Enter Admin Password</string>
     <string name="enter_your_phone_number">Enter your Phone Number</string>
     <string name="phone_number">Phone Number</string>
     <string name="country">Country</string>

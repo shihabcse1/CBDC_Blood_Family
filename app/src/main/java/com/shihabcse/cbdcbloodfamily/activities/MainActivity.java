@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = findViewById(R.id.nav_view_id);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar();
-        //getSupportActionBar().setTitle("Home");
 
         totalDonorReference = FirebaseDatabase.getInstance().getReference().child("blood_donors");
 

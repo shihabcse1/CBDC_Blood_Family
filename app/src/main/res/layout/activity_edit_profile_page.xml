@@ -18,7 +18,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:text="@string/enter_your_phone_number"
-            android:textColor="@color/black" />
+            android:textColor="@color/mid_dark" />
 
         <EditText
             android:id="@+id/editTextText_phone_number"
@@ -45,8 +45,17 @@
             android:hint="@string/select_blood_group"
             android:padding="14dp"
             android:text="@string/select_blood_group"
-            android:textColor="@color/black"
+            android:textColor="@color/mid_dark"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <TextView
+            android:id="@+id/textView_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/country"
+            android:textColor="@color/mid_dark" />
 
         <EditText
             android:id="@+id/editTextText_user_country"
@@ -73,7 +82,7 @@
             android:hint="@string/select_district"
             android:padding="14dp"
             android:text="@string/select_your_district"
-            android:textColor="@color/black"
+            android:textColor="@color/mid_dark"
             app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
 
@@ -118,13 +127,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/ready_to_donate"
-                android:textColor="@color/black" />
+                android:textColor="@color/mid_dark" />
 
             <CheckBox
                 android:id="@+id/checkBox_donate_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/mid_dark"
                 android:text="@string/yes" />
 
         </LinearLayout>
