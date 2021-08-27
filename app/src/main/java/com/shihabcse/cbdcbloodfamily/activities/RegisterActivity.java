@@ -95,8 +95,8 @@ public class RegisterActivity extends AppCompatActivity {
     private void createUserAccount(final String name, final String email, final String password1) {
 
         // progress Dialog
-        progressDialog.setTitle("Creating Account");
-        progressDialog.setMessage("Please wait ...");
+        progressDialog.setTitle("একাউন্ট তৈরী হচ্ছে...");
+        progressDialog.setMessage("অনুগ্রহপূর্বক অপেক্ষা করুন");
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.show();
 
@@ -107,7 +107,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         if (task.isSuccessful()) {
                             progressDialog.dismiss();
-                            showMessage("Account Created");//Account has been created successfully
+                            showMessage("একাউন্ট তৈরি হয়েছে!");//Account has been created successfully
 
                             updateUserInfoWithoutPhoto(name, mAuth.getCurrentUser());
                             //After Creating account we need to update profile picture and name
@@ -115,7 +115,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         } else {
                             progressDialog.dismiss();
-                            showMessage("Account Creation Failed!" + task.getException());
+                            showMessage("একাউন্ট তৈরী হয়নি! পুনরায় চেষ্টা করুন!" + task.getException());
                         }
 
                     }
@@ -136,7 +136,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             //user info updated successfully
-                            showMessage("Registration Complete");
+                            showMessage("অভিনন্দন! রেজিস্ট্রেশন সম্পন্ন হয়েছে");
                             updateUI();
                         }
                     }
@@ -161,24 +161,14 @@ public class RegisterActivity extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
 
                // openInfoUpdatedDialog();
-                showMessage("Information Added Successfully!");
-                //buttonSubmit.setVisibility(View.VISIBLE);
-                //progressBarSubmit.setVisibility(View.INVISIBLE);
-                //editTextPhoneNumber.getText().clear();
-                //editTextAddressDonor.getText().clear();
+                showMessage("তথ্য যুক্ত হয়েছে!");
 
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-
                 // fail to Add data
                 showMessage(e.getMessage());
-                //buttonSubmit.setVisibility(View.VISIBLE);
-                //progressBarSubmit.setVisibility(View.INVISIBLE);
-                //editTextPhoneNumber.getText().clear();
-                //editTextAddressDonor.getText().clear();
-
             }
         });
     }

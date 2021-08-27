@@ -368,8 +368,8 @@ public class AddNewDonorActivity extends AppCompatActivity {
     private void addDataToDatabase(BloodDonor bloodDonor) {
 
         // progress Dialog
-        progressDialog.setTitle("Adding Information");
-        progressDialog.setMessage("Please wait ...");
+        progressDialog.setTitle("তথ্য যুক্ত হচ্ছে...");
+        progressDialog.setMessage("অনুগ্রহপূর্বক অপেক্ষা করুন!");
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.show();
 
@@ -382,7 +382,7 @@ public class AddNewDonorActivity extends AppCompatActivity {
         addDonorReference.child(key).setValue(bloodDonor).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                showMessage("New Donor Added");
+                showMessage("নতুন রক্তদাতা ডাটাবেজে যোগ হয়েছে!");
                 progressDialog.dismiss();
                 updateUI();
             }
@@ -390,7 +390,7 @@ public class AddNewDonorActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 progressDialog.dismiss();
-                showMessage("Failed to Add Donor");
+                showMessage("দুঃখিত! ডাটাবেজে যুক্ত করা যায়নি");
             }
         });
 

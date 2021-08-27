@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void showStartDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Welcome to CBDC Blood Family")
-                .setMessage("Please go to Add New Donor page to be a Blood Donor.")
+                .setMessage("রক্তদাতা হওয়ার জন্য অনুগ্রহ করে Add New Donor পেজে যান।")
                 .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

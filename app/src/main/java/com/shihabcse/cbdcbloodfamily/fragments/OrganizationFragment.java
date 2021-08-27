@@ -87,7 +87,7 @@ public class OrganizationFragment extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getContext(), "Check your internet Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "আপনার ইন্টারনেট সংযোগ চেক করুন!", Toast.LENGTH_SHORT).show();
             }
         });
 

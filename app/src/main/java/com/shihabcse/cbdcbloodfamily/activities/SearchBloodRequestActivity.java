@@ -70,7 +70,7 @@ public class SearchBloodRequestActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getApplicationContext(), "Check your internet Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "আপনার ইন্টারনেট সংযোগ চেক করুন!", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -345,8 +345,8 @@ public class AddBloodRequestActivity extends AppCompatActivity {
     private void addDataToDatabase(BloodRequestPatient bloodRequestPatient) {
 
         // progress Dialog
-        progressDialog.setTitle("Adding Information");
-        progressDialog.setMessage("Please wait ...");
+        progressDialog.setTitle("তথ্য যুক্ত হচ্ছে...");
+        progressDialog.setMessage("অনুগ্রহপূর্বক অপেক্ষা করুন");
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.show();
 
@@ -362,7 +362,7 @@ public class AddBloodRequestActivity extends AppCompatActivity {
         donationHistoryReference.child(key).setValue(bloodRequestPatient).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                showMessage("Blood Request Added");
+                showMessage("রক্তের অনুরোধ ডাটাবেজে যুক্ত হয়েছে");
                 progressDialog.dismiss();
                 updateUI();
             }
@@ -370,7 +370,7 @@ public class AddBloodRequestActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 progressDialog.dismiss();
-                showMessage("Failed to Update history");
+                showMessage("দুঃখিত! ডাটাবেজে যুক্ত করা যায়নি");
             }
         });
 

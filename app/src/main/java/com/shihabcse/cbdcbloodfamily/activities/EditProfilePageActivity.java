@@ -327,8 +327,8 @@ public class EditProfilePageActivity extends AppCompatActivity {
 
     private void addDataToDatabase(RegisterUserEdited registerUserEdited) {
         // progress Dialog
-        progressDialog.setTitle("Adding Information");
-        progressDialog.setMessage("Please wait ...");
+        progressDialog.setTitle("তথ্য যুক্ত হচ্ছে...");
+        progressDialog.setMessage("অনুগ্রহপূর্বক অপেক্ষা করুন");
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.show();
 
@@ -341,7 +341,7 @@ public class EditProfilePageActivity extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
 
                 //openInfoUpdatedDialog();
-                showMessage("Information Updated Successfully!");
+                showMessage("তথ্য ডাটাবেসে যুক্ত হয়েছে!");
                 progressDialog.dismiss();
                 updateUI();
 

@@ -70,8 +70,8 @@ public class CoordinatorActivity extends AppCompatActivity {
     private void addDataToDatabase(Coordinator coordinator) {
 
         // progress Dialog
-        progressDialog.setTitle("Adding Information");
-        progressDialog.setMessage("Please wait ...");
+        progressDialog.setTitle("তথ্য যুক্ত হচ্ছে...");
+        progressDialog.setMessage("অনুগ্রহপূর্বক অপেক্ষা করুন");
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.show();
 
@@ -84,7 +84,7 @@ public class CoordinatorActivity extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
 
                 //openInfoUpdatedDialog();
-                showMessage("Information Updated Successfully!");
+                showMessage("তথ্য ডাটাবেসে যুক্ত হয়েছে!");
 
                 progressDialog.dismiss();
                 updateUI();
@@ -94,10 +94,8 @@ public class CoordinatorActivity extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
 
                 progressDialog.dismiss();
-
                 // fail to Add data
                 showMessage(e.getMessage());
-
                 editTextCoordinatorName.getText().clear();
                 editTextCoordinatorContactNumber.getText().clear();
                 editTextAppAdminPassword.getText().clear();
