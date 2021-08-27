@@ -125,4 +125,5 @@
     <string name="bn">বাং</string>
     <string name="en">EN</string>
     <string name="note">সর্বশেষ রক্তদানের তারিখ আপডেট রাখতে, প্রতিবার রক্তদান সম্পন্ন করার পর, অনুগ্রহপূর্বক এই পেজের তথ্য গুলো পুনরায় পূরণ করে সাবমিট দিন</string>
+    <string name="language">ভাষা নির্বাচন: </string>
 </resources>
