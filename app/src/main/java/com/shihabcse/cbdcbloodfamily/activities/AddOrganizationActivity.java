@@ -299,22 +299,22 @@ public class AddOrganizationActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String organizationName, String organizationAdmin, String organizationAdminContactNumber, String organizationDistrict) {
 
         if (organizationName.isEmpty()) {
-            editTextOrganizationName.setError("Please Enter Organization Name!");
+            editTextOrganizationName.setError("অনুগ্রহ করে প্রতিষ্ঠানের নাম লিখুন!");
             editTextOrganizationName.requestFocus();
             return false;
         }
         if (organizationAdmin.isEmpty()) {
-            editTextAdminName.setError("Please Enter Admin name!");
+            editTextAdminName.setError("অ্যাডমিনের নাম লিখুন!");
             editTextAdminName.requestFocus();
             return false;
         }
         if (organizationAdminContactNumber.isEmpty()) {
-            editTextAdminContactNumber.setError("Please Enter Phone Number!");
+            editTextAdminContactNumber.setError("দয়া করে ফোন নম্বর লিখুন!");
             editTextAdminContactNumber.requestFocus();
             return false;
         }
         if (organizationDistrict.equals("Select district") || organizationDistrict.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
         return true;

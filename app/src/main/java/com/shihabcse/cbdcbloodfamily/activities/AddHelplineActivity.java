@@ -199,25 +199,25 @@ public class AddHelplineActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String ambulanceName, String ambulancePhoneNumber, String ambulanceSelectDistrict, String ambulanceUniversityOrUpazila) {
 
         if (ambulanceName.isEmpty()) {
-            editTextAmbulanceName.setError("Please enter ambulance name!");
+            editTextAmbulanceName.setError("দয়া করে অ্যাম্বুলেন্সের নাম লিখুন!");
             editTextAmbulanceName.requestFocus();
             return false;
         }
 
         if (ambulancePhoneNumber.isEmpty()) {
-            editTextAmbulancePhoneNumber.setError("Please enter contact number!");
+            editTextAmbulancePhoneNumber.setError("দয়া করে যোগাযোগ নম্বর লিখুন!");
             editTextAmbulancePhoneNumber.requestFocus();
             return false;
         }
 
         if (ambulanceUniversityOrUpazila.isEmpty()) {
-            editTextAmbulanceUniversityOrUpazila.setError("Please enter upazila or university name!");
+            editTextAmbulanceUniversityOrUpazila.setError("অনুগ্রহ করে উপজেলা বা বিশ্ববিদ্যালয়ের নাম লিখুন!");
             editTextAmbulanceUniversityOrUpazila.requestFocus();
             return false;
         }
 
         if (ambulanceSelectDistrict.equals("Select District") || ambulanceSelectDistrict.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
         return true;

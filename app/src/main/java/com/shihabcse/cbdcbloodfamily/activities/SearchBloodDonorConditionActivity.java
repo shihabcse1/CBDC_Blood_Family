@@ -276,12 +276,12 @@ public class SearchBloodDonorConditionActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String bloodGroup, String district) {
 
         if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
-            Toast.makeText(this, "Select Blood Group", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "রক্তের গ্রুপ নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (district.equals("Select District") || district.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 

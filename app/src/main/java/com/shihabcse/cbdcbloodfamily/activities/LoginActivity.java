@@ -132,19 +132,19 @@ public class LoginActivity extends AppCompatActivity {
 
     private boolean isUserInputValidation(String mail, String password) {
         if (mail.isEmpty()) {
-            editTextLoginEmail.setError("Please Enter Your Mail!");
+            editTextLoginEmail.setError("দয়া করে আপনার মেইল লিখুন!");
             editTextLoginEmail.requestFocus();
             return false;
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(mail).matches()) {
-            editTextLoginEmail.setError("Enter a Valid Email Address!");
+            editTextLoginEmail.setError("একটি সঠিক ইমেইল লিখুন!");
             editTextLoginEmail.requestFocus();
             return false;
         }
 
         if (password.length() < 6) {
-            editTextLoginPassword.setError("Minimum 6 Characters Required!");
+            editTextLoginPassword.setError("ন্যূনতম 6 অক্ষরের পাসওয়ার্ড প্রয়োজন!");
             editTextLoginPassword.requestFocus();
             return false;
         }

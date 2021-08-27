@@ -116,19 +116,19 @@ public class CoordinatorActivity extends AppCompatActivity {
 
     private boolean isUserInputValidation(String coordinatorName, String coordinatorContactNumber, String appAdminPassword) {
         if(coordinatorName.isEmpty()) {
-            editTextCoordinatorName.setError("Please enter coordinator's name!");
+            editTextCoordinatorName.setError("অনুগ্রহ করে সমন্বয়কের নাম লিখুন!");
             editTextCoordinatorName.requestFocus();
             return false;
         }
 
         if (coordinatorContactNumber.isEmpty()) {
-            editTextCoordinatorContactNumber.setError("Please enter contact number!");
+            editTextCoordinatorContactNumber.setError("দয়া করে যোগাযোগ নম্বর লিখুন!");
             editTextCoordinatorContactNumber.requestFocus();
             return false;
         }
 
         if (!appAdminPassword.equals("f9f8f7!")) {
-            Toast.makeText(this, "Incorrect Password", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "ভুল পাসওয়ার্ড!", Toast.LENGTH_LONG).show();
             return false;
         }
         return true;

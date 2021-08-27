@@ -375,29 +375,29 @@ public class EditProfilePageActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String phoneNumber, String bloodGroup, String country, String district, String city, String organizationEdit) {
 
         if (phoneNumber.isEmpty()) {
-            editTextUserPhoneNumber.setError("Please Enter Phone Number!");
+            editTextUserPhoneNumber.setError("দয়া করে ফোন নম্বর লিখুন!");
             editTextUserPhoneNumber.requestFocus();
             return false;
         }
 
         if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
-            Toast.makeText(this, "Select Blood Group", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "রক্তের গ্রুপ নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (country.isEmpty()) {
-            editTextUserCountry.setError("Please Enter Courtry!");
+            editTextUserCountry.setError("দয়া করে দেশের নাম লিখুন!");
             editTextUserCountry.requestFocus();
             return false;
         }
 
         if (district.equals("Select your district") || district.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (city.isEmpty()) {
-            editTextUserCity.setError("Please Enter City!");
+            editTextUserCity.setError("দয়া করে শহর/থানার নাম লিখুন!");
             editTextUserCity.requestFocus();
             return false;
         }

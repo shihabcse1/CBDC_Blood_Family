@@ -42,10 +42,6 @@
     <item android:title="@string/communicate">
         <menu>
             <item
-                android:id="@+id/nav_menu_donate_us"
-                android:icon="@drawable/ic_baseline_donate_on_24"
-                android:title="@string/donate_us" />
-            <item
                 android:id="@+id/nav_menu_show_blood_bank"
                 android:icon="@drawable/ic_baseline_storefront_24"
                 android:title="@string/show_blood_bank" />
@@ -53,6 +49,10 @@
                 android:id="@+id/nav_menu_show_helpline"
                 android:icon="@drawable/ic_baseline_emoji_people_24"
                 android:title="@string/show_helpline" />
+            <item
+                android:id="@+id/nav_menu_donate_us"
+                android:icon="@drawable/ic_baseline_donate_on_24"
+                android:title="@string/donate_us" />
             <item
                 android:id="@+id/nav_menu_about_us"
                 android:icon="@drawable/ic_baseline_connect_without_contact_24"

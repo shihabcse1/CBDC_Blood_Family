@@ -389,47 +389,47 @@ public class AddBloodRequestActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String patientName, String quantityOfBlood, String patientType, String patientPhoneNumber, String bloodGroup, String district, String city, String bloodNeededDate) {
 
         if (patientName.isEmpty()) {
-            editTextPaitentName.setError("Please enter patient name!");
+            editTextPaitentName.setError("দয়া করে রোগীর নাম লিখুন!");
             editTextPaitentName.requestFocus();
             return false;
         }
 
         if (quantityOfBlood.isEmpty()) {
-            editTextBloodQuantity.setError("Please enter blood quantity!");
+            editTextBloodQuantity.setError("দয়া করে রক্তের পরিমাণ লিখুন!");
             editTextBloodQuantity.requestFocus();
             return false;
         }
 
         if (patientType.isEmpty()) {
-            editTextPatientType.setError("Please enter patient type!");
+            editTextPatientType.setError("দয়া করে রোগের ধরন লিখুন!");
             editTextPatientType.requestFocus();
             return false;
         }
 
         if (patientPhoneNumber.isEmpty()) {
-            editTextPatientPhoneNumber.setError("Please enter patient's Phone Number!");
+            editTextPatientPhoneNumber.setError("দয়া করে রোগীর ফোন নম্বর লিখুন!");
             editTextPatientPhoneNumber.requestFocus();
             return false;
         }
 
         if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
-            Toast.makeText(this, "Select Your Blood Group", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "আপনার রক্তের গ্রুপ নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (district.equals("Select your district") || district.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select Your District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "আপনার জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (city.isEmpty()) {
-            editTextPatientCity.setError("Please enter patient's City!");
+            editTextPatientCity.setError("দয়া করে রোগীর শহর/থানা  লিখুন!");
             editTextPatientCity.requestFocus();
             return false;
         }
 
         if (bloodNeededDate.equals("Select Date")) {
-            Toast.makeText(this, "Select Date", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "তারিখ নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 

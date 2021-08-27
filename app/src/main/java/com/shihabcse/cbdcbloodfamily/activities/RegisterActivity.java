@@ -179,31 +179,31 @@ public class RegisterActivity extends AppCompatActivity {
 
     private boolean isUserInputValidation(String name, String email, String password1, String password2) {
         if (name.isEmpty()) {
-            editTextUserRegisterName.setError("Please Enter Your Name!");
+            editTextUserRegisterName.setError("আপনার নাম লিখুন!");
             editTextUserRegisterName.requestFocus();
             return false;
         }
 
         if (email.isEmpty()) {
-            editTextUserRegisterEmail.setError("Please Enter Your Mail!");
+            editTextUserRegisterEmail.setError("দয়া করে আপনার মেইল লিখুন!");
             editTextUserRegisterEmail.requestFocus();
             return false;
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextUserRegisterEmail.setError("Enter a Valid Email Address!");
+            editTextUserRegisterEmail.setError("একটি সঠিক ইমেইল লিখুন!");
             editTextUserRegisterEmail.requestFocus();
             return false;
         }
 
         if (password1.length() < 6) {
-            editTextUserPassword.setError("Minimum 6 Characters Required!");
+            editTextUserPassword.setError("ন্যূনতম 6 অক্ষরের পাসওয়ার্ড প্রয়োজন!");
             editTextUserPassword.requestFocus();
             return false;
         }
 
         if (!password1.equals(password2)) {
-            editTextUserConfirmPassword.setError("Password didn't match!");
+            editTextUserConfirmPassword.setError("সঠিক পাসওয়ার্ড লিখুন");
             editTextUserConfirmPassword.requestFocus();
             return false;
         }

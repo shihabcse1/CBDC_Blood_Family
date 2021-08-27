@@ -96,17 +96,17 @@ public class AddBloodBankActivity extends AppCompatActivity {
 
     private boolean isUserInputValidation(String bloodBankName, String bloodBankContactNumber, String bloodBankAddress) {
         if(bloodBankName.isEmpty()) {
-            editTextBloodBankName.setError("Please enter blood bank name!");
+            editTextBloodBankName.setError("ব্লাড ব্যাংকের নাম লিখুন!");
             editTextBloodBankName.requestFocus();
             return false;
         }
         if (bloodBankContactNumber.isEmpty()) {
-            editTextBloodBankContactNo.setError("Please enter contact number!");
+            editTextBloodBankContactNo.setError("দয়া করে ফোন নম্বর লিখুন!");
             editTextBloodBankContactNo.requestFocus();
             return false;
         }
         if (bloodBankAddress.isEmpty()) {
-            editTextBloodBankAddress.setError("Please enter address!");
+            editTextBloodBankAddress.setError("দয়া করে আপনার ঠিকানা লিখুন!");
             editTextBloodBankAddress.requestFocus();
             return false;
         }

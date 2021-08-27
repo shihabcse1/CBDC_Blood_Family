@@ -409,24 +409,24 @@ public class AddNewDonorActivity extends AppCompatActivity {
     private boolean isUserInputValidation(String bloodDonorName, String contactNumber, String address, String bloodGroup) {
 
         if(bloodDonorName.isEmpty()) {
-            editTextBloodDonorName.setError("Please enter donor's name!");
+            editTextBloodDonorName.setError("দয়া করে রক্তদাতার নাম লিখুন!");
             editTextBloodDonorName.requestFocus();
             return false;
         }
 
         if (contactNumber.isEmpty()) {
-            editTextBloodDonorContactNumber.setError("Please enter contact number!");
+            editTextBloodDonorContactNumber.setError("দয়া করে যোগাযোগ নম্বর লিখুন!");
             editTextBloodDonorContactNumber.requestFocus();
             return false;
         }
 
         if (address.equals("Select District") || address.equals("জেলা নির্বাচন")) {
-            Toast.makeText(this, "Select District", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "জেলা নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (bloodGroup.equals("Select blood group") || bloodGroup.equals("রক্তের গ্রুপ")) {
-            Toast.makeText(this, "Select Blood Group", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "রক্তের গ্রুপ নির্বাচন করুন", Toast.LENGTH_LONG).show();
             return false;
         }
 
