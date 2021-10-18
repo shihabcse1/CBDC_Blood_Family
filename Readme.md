@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
 
 <h1 align="center">
-    A Beautiful Django, Vanilla JavaScript Chat Application
+    CBDC Blood Bank
 </h1>
 
 <p>Tolk is a single page chat web application developed using <a href="https://github.com/django/django">
