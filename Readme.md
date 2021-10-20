@@ -19,17 +19,17 @@ You can check it out in <a href="http://tolk-project.herokuapp.com/">demo</a>.
 
 ## Features
 
-- [x] sending/receiving messages
-- [x] contacts system
-- [x] create groups
-- [x] privacy mode
-- [x] app notifications
-- [x] privacy mode
-- [x] dark mode
-- [x] API at /api
-- [x] send attachments
-- [x] single page application
-- [x] search
+- [x] Register/Login Feature
+- [x] English/Bangla Language Support
+- [x] Find and Search Blood Donors
+- [x] Add Blood Request
+- [x] Add Blood Bank
+- [x] Find Blood Bank
+- [x] Add Ambulance/Helpline
+- [x] Find Amblulance/Helpline
+- [x] Become a Blood Donor
+- [x] Singout Feature
+
 
 ## ScreenShots
 <img src="screenshots/Screenshot%20from%202021-08-08%2018-06-11.png" alt="dark_theme"/>
